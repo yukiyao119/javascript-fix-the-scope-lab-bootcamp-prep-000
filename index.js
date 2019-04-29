@@ -1,11 +1,11 @@
-var animal = 'dog'
+var animal = 'dog' //<-- global
 
 function myAnimal() {
-  return animal
+  return animal //<-- global 
 }
 
 function yourAnimal() {
-  var animal = 'cat'
+  var animal = 'cat' //<-- declare a local varialble animal
   // How can we make sure that this function
   // and the above function both pass?
   // P.S.: You can't just hard-code 'cat' below
@@ -14,6 +14,7 @@ function yourAnimal() {
 
 function add2(n) {
   const two = 2
+  //declared varialble in block scope
   return (n + two)
   // Feel free to move things around!
 }
@@ -32,3 +33,4 @@ var temp = funkyFunction()
 //it enabled funkyFunction's argu, but not anonymous func's argu;
 
 var theFunk = temp();
+// call temp function; it will return "FUNKY!"
