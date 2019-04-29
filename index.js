@@ -31,4 +31,4 @@ var temp = funkyFunction()
 //Temp now is the returned anonymous function name inside funkyFunction, the stringified version of `anonymous()`
 //it enabled funkyFunction's argu, but not anonymous func's argu;
 
-theFunk = temp();
+var theFunk = temp();
